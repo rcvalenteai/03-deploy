@@ -16,6 +16,7 @@
 
     <p>What do you think the percent of the smaller value is of the larger value?</p>
     <p>Ex: If you think the smaller one is exactly a half of the bigger one, please input 50. (Circles mark)</p>
+    <p>Please do not use decimals: Whole Numbers only. Bad: 0.5, Good: 50</p>
     <input type="text" id="guess" value="Ex: 45" onfocus="this.value=''">
     <button id="buttons" onclick="submitAnswer()">Submit</button>
 
@@ -35,7 +36,7 @@
     // Append Chart classes to this list Ex: [new BarChart(), new PieChart(), new PolarChart()]
     // Example Class BarChart()
     var charts = [new BarChart(), new PieChart(), new DoughnutChart(), new RadialChart(), new TreemapChart()];
-    var trialsPerChart = 3;
+    var trialsPerChart = 20;
     var experiment = new Experiment(charts, trialsPerChart, chartLocation);
     var guessValue = document.getElementById("guess");
 
